@@ -172,7 +172,7 @@ st.sidebar.write(account.address)
 # @TODO
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
-ether = get_balance(web3, account.address)
+ether = get_balance(w3, account.address)
 st.sidebar.markdown("## Your Balance of Ether")
 st.sidebar.markdown(ether)
 st.sidebar.markdown("---------")
@@ -312,7 +312,7 @@ if st.sidebar.button("Send Transaction"):
 
 # The function that starts the Streamlit application
 # Writes KryptoJobs2Go candidates to the Streamlit page
-get_people()
+get_people(w3)
 
 ################################################################################
 # Step 3: Inspect the Transaction
